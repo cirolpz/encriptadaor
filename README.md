@@ -42,13 +42,16 @@ La aplicación utiliza una serie de variables CSS para definir colores y estilos
 - `--color-sextenario`: #D8DFE8
 
 Los estilos están diseñados para proporcionar una interfaz de usuario limpia y moderna, adaptada para diferentes tamaños de pantalla.
-Imagenes de la pagina web:
-![Captura de pantalla 2024-08-18 183130](https://github.com/user-attachments/assets/4c890a69-c0f4-462a-be1b-1b5908029660)
-![Captura de pantalla 2024-08-18 183047](https://github.com/user-attachments/assets/2578d92f-43ab-40ab-b491-3a8a3e4a3552)
-![Captura de pantalla 2024-08-18 183025](https://github.com/user-attachments/assets/b1c4e90e-cbba-483d-a6dc-6f62c292e22d)
-![Captura de pantalla 2024-08-18 182955](https://github.com/user-attachments/assets/2d16e606-17f0-4dde-8816-67f800458aca)
-![Captura de pantalla 2024-08-18 182944](https://github.com/user-attachments/assets/4d0f4bb3-740e-46ff-b767-fa30d7d9a39a)
+
+## Imagenes de la pagina web:
+
 ![Captura de pantalla 2024-08-18 182920](https://github.com/user-attachments/assets/e429a9d6-d6b7-4a8b-bd35-b9540e9f0f92)
+![Captura de pantalla 2024-08-18 182944](https://github.com/user-attachments/assets/4d0f4bb3-740e-46ff-b767-fa30d7d9a39a)
+![Captura de pantalla 2024-08-18 182955](https://github.com/user-attachments/assets/2d16e606-17f0-4dde-8816-67f800458aca)
+![Captura de pantalla 2024-08-18 183025](https://github.com/user-attachments/assets/b1c4e90e-cbba-483d-a6dc-6f62c292e22d)
+![Captura de pantalla 2024-08-18 183047](https://github.com/user-attachments/assets/2578d92f-43ab-40ab-b491-3a8a3e4a3552)
+![Captura de pantalla 2024-08-18 183130](https://github.com/user-attachments/assets/4c890a69-c0f4-462a-be1b-1b5908029660)
+
 
 
 
