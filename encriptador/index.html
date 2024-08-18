@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptado</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="encriptado.js"></script>
+    <link rel="icon" type="image/png" href="assets/Logo.png">
+
+</head>
+<body>
+    <header>
+        <img class="presentacion__logo" src="assets/Logo.png" alt="Imagen del Logo">
+    </header>
+    <main>
+    <div class="contenido">
+        <div class="contenido__input">
+            <textarea type="text">Ingrese texto aquí</textarea>
+            <p class="contenido__mensaje">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                    <path fill="currentColor" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2"/>
+                </svg>
+                Solo letras minúsculas y sin acentos
+            </p>                
+            <div class="botones__input">
+                    <button id="encriptar">Encriptar</button>
+                    <button id="desencriptar">Desencriptar</button>
+                </div>
+        </div>
+
+
+
+        <div class="contenido__respuesta">
+            <img class="contenido__respuesta__muñeco" src="assets/Muñeco.png" alt="Imagen de un muñeco">
+            <h2>Ningún mensaje fue encontrado</h2>
+            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            <button id="copiar">Copiar</button>
+        </div>
+
+    </div>
+</main>
+    <footer>
+        <p>Realizado por Ciro Lopez</p>
+    </footer>
+</body>
+</html>

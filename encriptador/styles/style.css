@@ -1,0 +1,278 @@
+:root {
+  --color-primario: #E5E5E5;
+  --color-secundario: #0A3871;
+  --color-terciario: #FFFFFF;
+  --color-cuaternario: #343A40;
+  --color-quinario: #495057;
+  --color-sextenario: #D8DFE8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 4%;
+  background-color: var(--color-primario);
+}
+
+main {
+  max-width: 90%;
+  height: 88vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 4% 3%;
+}
+
+.contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4%;
+  gap: 4%;
+  flex: 1;
+}
+
+.presentacion__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5em;
+  width: 7.5em;
+  height: 3em;
+  position: fixed;
+  left: 2.5em;
+  top: 2.5em;
+}
+
+.contenido__input {
+  position: fixed;
+  width: 45%;
+  height: 70%;
+  left: 15%;
+  font-size: 2.5vw;
+  color: var(--color-secundario);
+}
+
+textarea {
+  width: 70%;
+  height: 70%;
+  color: var(--color-secundario);
+  resize: none;
+}
+
+.contenido__mensaje {
+  color: var(--color-cuaternario);
+  display: inline-flex;
+  align-items: center;
+  padding: 2%;
+  white-space: nowrap;
+  max-width: 100%;
+  font-size: 0.5em;
+}
+
+.contenido__mensaje svg {
+  margin-right: 0.5em;
+}
+
+.botones__input {
+  display: flex;
+  gap: 2%;
+  justify-content: baseline;
+}
+
+.contenido__respuesta {
+  position: fixed;
+  width: 30%;
+  height: 75%;
+  left: 60%;
+  top: 10%;
+  background: var(--color-terciario);
+  box-shadow: 0 2.5% 3.5% -1% rgba(0, 0, 0, 0.08);
+  border-radius: 3.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+.contenido__respuesta__muñeco {
+  position: absolute;
+  width: 60%;
+  height: 40%;
+  left: 15%;
+  top: 15%;
+}
+
+.contenido__respuesta h2 {
+  text-align: center;
+  color: var(--color-cuaternario);
+  width: 100%;
+  padding-top: 80%;
+  font-size: 1.7vw;
+}
+
+.contenido__respuesta p {
+  color: var(--color-quinario);
+  text-align: center;
+  width: 100%;
+  font-size: 1.5vw;
+  line-height: 1.2;
+  overflow: auto;
+  padding-top: 1%;
+  margin-top: 1%;
+}
+
+button {
+  padding: 2% 4%;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 12em;
+  text-align: center;
+  font-size: 16px;
+}
+
+button#encriptar {
+  background-color: var(--color-secundario);
+  color: var(--color-terciario);
+}
+
+button#desencriptar {
+  background-color: var(--color-sextenario);
+  color: var(--color-secundario);
+  border: 1px solid var(--color-secundario);
+}
+
+button#copiar {
+  background-color: var(--color-terciario);
+  border: 1px solid var(--color-secundario);
+  color: var(--color-secundario);
+  margin-top: 3%;
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--color-secundario);
+  color: var(--color-sextenario);
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 0 40px 40px;
+    height: auto;
+  }
+
+  .presentacion__logo {
+    left: 2px;
+    width: 50px;
+    height: 30px;
+  }
+
+  .contenido__respuesta__muñeco {
+    width: 0; 
+    height: 0;
+    display: none;
+  }
+
+  textarea {
+    width: 78%;
+    height: 100%;
+  }
+
+  .botones__input {
+    width: 290px;
+  }
+
+  .contenido__input {
+    margin-top: 350px;
+    font-size: 20px;
+    padding: 45px 10px 10px;
+    height: 250px;
+    left: 15px;
+    right: 20px;
+    width: 400px;
+  }
+
+  .contenido__respuesta h2 {
+    font-size: 20px;
+    margin-bottom: 4%;
+    padding: 5%;
+  }
+
+  .contenido__respuesta p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .contenido__respuesta {
+    width: 310px;
+    height: 250px;
+    margin-bottom: 4%;
+    left: 15px;
+    right: 10px;
+    top: 430px;
+    padding: 15px 10px 55px;
+  }
+
+  button#copiar {
+    font-size: 20px;
+    width: 78%;
+    padding: 1% 2%;
+    margin-top: 2%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    padding: 4% 0 0;
+  }
+
+  main {
+    padding: 0 4%;
+    padding-bottom: 60px;
+  }
+
+  .contenido__input {
+    font-size: 20px;
+    padding: 45px 10px 10px;
+    height: 250px;
+    left: 15px;
+    right: 20px;
+    width: 400px;
+  }
+
+  button#copiar {
+    width: 70%;
+    padding: 1% 1.5%;
+    margin-top: 1%;
+  }
+
+  .botones__input {
+    flex-direction: column;
+    gap: 5px;
+    font-size: 3vw;
+  }
+}
